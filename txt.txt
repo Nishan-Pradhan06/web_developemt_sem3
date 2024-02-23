@@ -2,3 +2,6 @@ body --> working area.. which display on websites
 elemets --> which start which opening tag with content with  closing tag
 tag --> which define which elements
 attributes --> additional inforamtion like src, type, height width, style etc
+b tag and string are tyically same but string tag differ in seo which play inportance role...
+sub tag gives base
+sup gives power
