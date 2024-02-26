@@ -86,7 +86,7 @@ body {
     justify-content: space-around;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    padding:2rem 0 2rem;
     margin: 0 30rem 2rem 30rem;
     border-radius: 0.5rem;
 }
@@ -98,6 +98,34 @@ body {
     margin-right: 15px;
 }
 
+.img:hover {
+    transition: ease-in 200ms;
+    transform:scale(1.02);
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
 .footer {
     background-color: cadetblue;
     text-align: center;
