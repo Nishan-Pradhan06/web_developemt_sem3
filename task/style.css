@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-right: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -136,20 +137,27 @@ body {
 }
 
 .products-container {
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.laptops-containers:hover {
+    cursor: pointer;
+    transition: ease-in 200ms;
+    transform: scale(1.02);
 }
 
 .laptops-containers {
     width: 255px;
     background-color: #ffffff;
     padding: 15px 15px 0 15px;
-    margin-left: 23px;
+    margin: 1px 20px 20px 20px;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
