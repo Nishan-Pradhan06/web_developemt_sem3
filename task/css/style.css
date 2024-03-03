@@ -41,13 +41,18 @@ body {
     height: 40px;
     width: 70%;
     padding-left: 0.99rem;
+    padding-right: 40px;
+    background-image: url('../assets/search.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+
 }
 
 .header-icons {
     display: flex;
     margin: 15px 127px 0 0;
     cursor: pointer;
-
 }
 
 .right-icon {
@@ -80,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.8rem 2rem 2rem 3rem;
+    margin: 0.8rem 2rem 0 3rem;
 }
 
 .slide-nav {
@@ -266,11 +271,7 @@ body {
     flex-wrap: wrap;
 }
 
-.laptops-containers:hover {
-    cursor: pointer;
-    transition: ease-in 200ms;
-    transform: scale(1.02);
-}
+
 
 .laptops-containers {
     width: 255px;
@@ -280,6 +281,12 @@ body {
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.laptops-containers:hover {
+    cursor: pointer;
+    transition: ease-in 200ms;
+    transform: scale(1.02);
 }
 
 .footer {
