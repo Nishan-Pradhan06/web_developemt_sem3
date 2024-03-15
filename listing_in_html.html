@@ -1,5 +1,25 @@
 <html>
-    <head> <title>Order Listing</title></head>
+    <head> <title>Order Listing</title>
+        <style>
+        
+        table,th,td{
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+         
+        }
+        .verti{
+               writing-mode: vertical-rl;
+            transform: rotate(180 deg);
+        }
+        .main{
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+    </head>
     <body>
 
         <!-- write a html program for the demonstration of lists
@@ -14,8 +34,8 @@
             <li>point 2</li>
             <li>point 3</li>
         </ul>
-          <h4>square list</h4>
-         <ul style="list-style: square;">
+        <h4>square list</h4>
+        <ul style="list-style: square;">
             <li>point 1</li>
             <li>point 2</li>
             <li>point 3</li>
@@ -36,8 +56,210 @@
                 mobile, web, and desktop from a single codebase. It uses the
                 Dart programming language, which was also developed by Google.
             </dd>
-            </dl>
-            <button><a href="./html/index.html"
+        </dl>
+        <button><a href="./html/index.html"
                 style="text-decoration: none;font-size: 20px;">back</a></button>
-        </body>
-    </html>
+        <table style="border-collapse: collapse;">
+            <tr>
+                <th style="border: 1px solid black;">S.N</th>
+                <th style="border: 1px solid black;">Name</th>
+                <th style="border: 1px solid black;">Address</th>
+                <th style="border: 1px solid black;">Phone</th>
+            </tr>
+            <tr style="color: green;">
+                <td style="border: 1px solid black;">1</td>
+                <td style="border: 1px solid black;">Pratik Rana</td>
+                <td style="border: 1px solid black;">itahari</td>
+                <td style="border: 1px solid black;">980210322</td>
+            </tr>
+            <tr style="color: red;">
+                <td style="border: 1px solid black;">2</td>
+                <td style="border: 1px solid black;">Nishan Pradhan</td>
+                <td style="border: 1px solid black;">Laxmimarga</td>
+                <td style="border: 1px solid black;">98132423423</td>
+            </tr>
+            <tr style="color: blue;">
+                <td style="border: 1px solid black;">3</td>
+                <td style="border: 1px solid black;">Nischal Bhattrai</td>
+                <td style="border: 1px solid black;">inaruwa</td>
+                <td style="border: 1px solid black;">982342384823</td>
+            </tr>
+        </table>
+
+        <!-- next table -->
+        <table style="border-collapse: collapse;">
+            <tr>
+                <th></th>
+                <th colspan="2">MON</th>
+                <th>TUE</th>
+                <th>WEN</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <!-- <th>SAT</th> -->
+            </tr>
+            <tr>
+                <th rowspan="2">Language</th>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JAVA</td>
+                <td>FLUTTER</td>
+                <td>PYTHON</td>
+                <td>SWIFT</td>
+            </tr>
+            <tr>
+                <!-- <th>Browser</th> -->
+                <td>GO</td>
+                <td>GOOGLE</td>
+                <td>DART</td>
+                <td>BRAVE</td>
+                <td>CHROME</td>
+                <td>EDGE</td>
+            </tr>
+            <tr>
+
+                <th>Laptops</th>
+                <td>ACER</td>
+                <td>DELL</td>
+                <td>APPLE</td>
+                <td>MACBOOK</td>
+                <td>HP</td>
+                <td>LENOVO</td>
+            </tr>
+        </table>
+
+        <table class="main">
+            <tr>
+                <th colspan="2">Time</th>
+
+                <th>7:<sup>30</sup>- 8:<sup>00</sup></th>
+                <th>8:<sup>30</sup>- 8:<sup>00</sup></th>
+                <th>8:<sup>30</sup>- 9:<sup>00</sup></th>
+                <th>9:<sup>30</sup>- 9:<sup>00</sup></th>
+                <th>9:<sup>30</sup>- 10:<sup>00</sup></th>
+                <th>10:<sup>30</sup>- 10:<sup>00</sup></th>
+                <th>10:<sup>30</sup>- 11:<sup>00</sup></th>
+                <th>11:<sup>30</sup>- 11:<sup>00</sup></th>
+                <th>11:<sup>30</sup>- 12:<sup>00</sup></th>
+            </tr>
+            <tr>
+                <th colspan="2">Duration</th>
+
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+            </tr>
+            <tr>
+                <th colspan="2">Period</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>0</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Mon</th>
+                <td>4</td>
+                <th rowspan="15" class="verti">Assembly & regestiration in
+                    class</th>
+                <th colspan="2">Mathematics</th>
+                <th colspan="2"> Akupem Twi</th>
+                <th rowspan="15" class="verti">Break</th>
+                <th rowspan="3">Library</th>
+                <th colspan="2"> Science</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <th colspan="2">History</th>
+                <th colspan="2"> Mathematics</th>
+                <th colspan="2"> Science</th>
+            </tr>
+            <tr>
+                <td>6</td>
+                <th colspan="2">Mathematics</th>
+                <th colspan="2">English Language</th>
+                <th colspan="2"> Science</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Tue</th>
+                <td>4</td>
+                <th colspan="2">Mathematics</th>
+                <th colspan="2"> Akupem Twi</th>
+                <th >Computing</th>
+                <th colspan="2"> OWOP</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <th colspan="2">History</th>
+                <th colspan="2"> Akupem Twi</th>
+                <th>English</th>
+                <th colspan="2"> OWOP</th>
+            </tr>
+            <tr>
+                <td>6</td>
+                <th colspan="2">History</th>
+                <th colspan="2"> Akupem Twi</th>
+                <th>RME</th>
+                <th colspan="2"> OWOP</th>
+            </tr>
+             <tr>
+                <th rowspan="3">Wed</th>
+                <td>4</td>
+                <th>Frence</th>
+                <th colspan="2"> English Language</th>
+                <th >Computing</th>
+                <th> Math</th>
+                <th colspan="2"> History</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <th>Twi</th>
+                <th > Frence</th>
+                <th colspan="2">English language</th>
+                <th> RME</th>
+                <th colspan="2"> History</th>
+                
+            </tr>
+            <tr>
+                <td>6</td>
+                <th colspan="2">Mathematics</th>
+                <th colspan="2">Akupem twi</th>
+                <th> Computing</th>
+                <th colspan="2"> History</th>
+            </tr>
+             <tr>
+                <th rowspan="3">Thurs</th>
+                <td>4</td>
+                <th colspan="2">Creatives Arts</th>
+                <th colspan="2"> History</th>
+                <th> English</th>
+                <th colspan="2"> Mathematics</th>
+            </tr>
+            <tr>
+               <td>5</td>
+                <th colspan="2">Creatives Arts</th>
+                <th colspan="2"> Science</th>
+                <th> OWOP</th>
+                <th colspan="2"> Mathematics</th>
+                
+            </tr>
+            <tr>
+              <td>6</td>
+                <th colspan="2">Creatives Arts</th>
+                <th colspan="2"> English language</th>
+                <th> Twi</th>
+                <th colspan="2"> Mathematics</th>
+            </tr>
+        </table>
+
+    </body>
+</html>

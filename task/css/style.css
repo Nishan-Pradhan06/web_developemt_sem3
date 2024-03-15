@@ -32,21 +32,22 @@ body {
     margin-left: 170px;
 }
 
-.search {
+#search-items .search {
     margin: 0 20px 0 40px;
     border-radius: 0.85rem;
     margin-top: 14px;
+    background-position: right;
     border: none;
     outline: none;
     height: 40px;
     width: 70%;
     padding-left: 0.99rem;
     padding-right: 40px;
-    background-image: url('../assets/search.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 20px;
+}
 
+#search-items #search-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .header-icons {
