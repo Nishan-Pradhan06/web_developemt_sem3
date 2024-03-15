@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Table</title>
         <style>
-        
-        table,th,td{
+        table,
+        th,
+        td {
             margin-top: 20px;
             padding: 10px;
             border: 1px solid black;
             border-collapse: collapse;
-         
         }
-        .verti{
-               writing-mode: vertical-rl;
+        .verti {
+            writing-mode: vertical-rl;
             transform: rotate(180 deg);
             font-size: 40px;
+            border: 3px solid;
         }
-        .main{
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-        }
-    .li{
-            /* border: 3px solid; */
+        .li,.day {
+          border: 3px solid;
             border-top: 3px solid;
+            border-right: 3px solid;
         }
-     .verti,.day{
-        border: 3px solid;
-     }
+        .top {
+            border-top: 3px solid;
+            border-right: 3px solid;
+        }
+        .right {
+            border-right: 3px solid;
+        }
+        .bottom {
+            border-bottom: 3px solid;
+        }
     </style>
     </head>
+
     <body>
         <table class="main">
             <tr>
@@ -77,119 +83,120 @@
                 <td class="li">4</td>
                 <th rowspan="15" class="verti" class="text">Assembly &
                     regestiration in class</th>
-                <th colspan="2">Mathematics</th>
-                <th colspan="2"> Akupem Twi</th>
-                <th rowspan="15" class="verti" class="text">Break</th>
-                <th rowspan="3">Library</th>
-                <th colspan="2"> Science</th>
+                <th colspan="2" class="top">Mathematics</th>
+                <th colspan="2" class="top"> Akupem Twi</th>
+                <th rowspan="15" class="verti">Break</th>
+                <th rowspan="3" class="top">Library</th>
+                <th colspan="2" class="top"> Science</th>
             </tr>
             <tr class="tab">
                 <td>5</td>
-                <th colspan="2">History</th>
-                <th colspan="2"> Mathematics</th>
-                <th colspan="2"> Science</th>
+                <th colspan="2" class="right">History</th>
+                <th colspan="2" class="right"> Mathematics</th>
+                <th colspan="2" class="right"> Science</th>
             </tr>
             <tr>
                 <td>6</td>
-                <th colspan="2">Mathematics</th>
-                <th colspan="2">English Language</th>
-                <th colspan="2"> Science</th>
+                <th colspan="2" class="right ">Mathematics</th>
+                <th colspan="2" class="right ">English Language</th>
+                <th colspan="2" class="right "> Science</th>
             </tr>
             <tr>
                 <th rowspan="3" class="day">Tue</th>
                 <td class="li">4</td>
-                <th colspan="2">Mathematics</th>
-                <th colspan="2"> Akupem Twi</th>
-                <th>Computing</th>
-                <th colspan="2"> OWOP</th>
+                <th colspan="2" class="top">Mathematics</th>
+                <th colspan="2" class="top"> Akupem Twi</th>
+                <th class="top">Computing</th>
+                <th colspan="2" class="top"> OWOP</th>
             </tr>
             <tr>
                 <td>5</td>
-                <th colspan="2">History</th>
-                <th colspan="2"> Akupem Twi</th>
-                <th>English</th>
-                <th colspan="2"> OWOP</th>
+                <th colspan="2" class="right">History</th>
+                <th colspan="2" class="right"> Akupem Twi</th>
+                <th class="right">English</th>
+                <th colspan="2" class="right"> OWOP</th>
             </tr>
             <tr>
                 <td>6</td>
-                <th colspan="2">History</th>
-                <th colspan="2"> Akupem Twi</th>
-                <th>RME</th>
-                <th colspan="2"> OWOP</th>
+                <th colspan="2" class="right">History</th>
+                <th colspan="2" class="right"> Akupem Twi</th>
+                <th class="right">RME</th>
+                <th colspan="2" class="right"> OWOP</th>
             </tr>
             <tr>
                 <th rowspan="3" class="day">Wed</th>
                 <td class="li">4</td>
-                <th>Frence</th>
-                <th colspan="2"> English Language</th>
-                <th>Computing</th>
-                <th> Math</th>
-                <th colspan="2"> History</th>
+                <th class="top">Frence</th>
+                <th colspan="2" class="top"> English Language</th>
+                <th class="top">Computing</th>
+                <th class="top"> Math</th>
+                <th colspan="2" class="top"> History</th>
             </tr>
             <tr>
                 <td>5</td>
-                <th>Twi</th>
-                <th> Frence</th>
-                <th colspan="2">English language</th>
-                <th> RME</th>
-                <th colspan="2"> History</th>
+                <th class="right">Twi</th>
+                <th class="right"> Frence</th>
+                <th colspan="2" class="right">English language</th>
+                <th class="right"> RME</th>
+                <th colspan="2" class="right"> History</th>
 
             </tr>
             <tr>
                 <td>6</td>
-                <th colspan="2">Mathematics</th>
+                <th colspan="2" class="right">Mathematics</th>
                 <th colspan="2">Akupem twi</th>
-                <th> Computing</th>
-                <th colspan="2"> History</th>
+                <th class="right "> Computing</th>
+                <th colspan="2" class="right "> History</th>
             </tr>
             <tr>
                 <th rowspan="3" class="day">Thurs</th>
                 <td class="li">4</td>
-                <th colspan="2">Creatives Arts</th>
-                <th colspan="2"> History</th>
-                <th> English</th>
-                <th colspan="2"> Mathematics</th>
+                <th colspan="2" class="top">Creatives Arts</th>
+                <th colspan="2" class="top"> History</th>
+                <th class="top"> English</th>
+                <th colspan="2" class="top"> Mathematics</th>
             </tr>
             <tr>
                 <td>5</td>
-                <th colspan="2">Creatives Arts</th>
-                <th colspan="2"> Science</th>
-                <th> OWOP</th>
-                <th colspan="2"> Mathematics</th>
+                <th colspan="2" class="right">Creatives Arts</th>
+                <th colspan="2" class="right"> Science</th>
+                <th class="right"> OWOP</th>
+                <th colspan="2" class="right"> Mathematics</th>
 
             </tr>
             <tr>
                 <td>6</td>
-                <th colspan="2">Creatives Arts</th>
-                <th colspan="2"> English language</th>
-                <th> Twi</th>
-                <th colspan="2"> Mathematics</th>
+                <th colspan="2" class="right">Creatives Arts</th>
+                <th colspan="2" class="right"> English language</th>
+                <th class="right"> Twi</th>
+                <th colspan="2" class="right"> Mathematics</th>
             </tr>
             <tr>
                 <th rowspan="3" class="day">Fri</th>
                 <td class="li">4</td>
-                <th colspan="2">English language</th>
-                <th colspan="2">Mathematics</th>
-                <th> English</th>
-                <th colspan="2"> OWOP</th>
+                <th colspan="2" class="top">English language</th>
+                <th colspan="2" class="top">Mathematics</th>
+                <th class="top"> English</th>
+                <th colspan="2" class="top"> OWOP</th>
             </tr>
             <tr>
                 <td>5</td>
-                <th colspan="2">English language</th>
-                <th> Science</th>
-                <th> OWOP</th>
-                <th> Mathematics</th>
-                <th colspan="2"> Mathematics</th>
+                <th colspan="2" class="right">English language</th>
+                <th class="right"> Science</th>
+                <th class="right"> OWOP</th>
+                <th class="right"> Mathematics</th>
+                <th colspan="2" class="right"> Mathematics</th>
 
             </tr>
             <tr>
                 <td style="border-bottom: 3px solid;">6</td>
-                <th>English</th>
-                <th colspan="2"> English language</th>
-                <th> Twi</th>
-                <th> Mathematics</th>
-                <th colspan="2"> Science</th>
+                <th class="bottom right">English</th>
+                <th colspan="2" class="bottom right"> English language</th>
+                <th class="bottom right"> Twi</th>
+                <th class="bottom right"> Mathematics</th>
+                <th colspan="2" class="bottom right"> Science</th>
             </tr>
         </table>
     </body>
+
 </html>
