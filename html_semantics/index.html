@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Semantics</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+        header {
+            text-align: center;
+            color: #003366;
+            background-color: #F9F6EE;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            font-size: 18px;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #003366;
+        }
+        nav a:hover {
+            font-weight: 600;
+        }
+        #content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            text-align: center;
+            height: 78vh;
+            background-color: #003366;
+            padding: 0 80px;
+            color: white;
+            flex: 1;
+        }
+        .main{
+            margin: 0 300px;
+            background-color: bisque;
+        }
+        footer {
+            padding: 20px;
+            background-color: #343434;
+            text-align: center;
+            color: white;
+        }
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <header>
+            <figure>
+                <img src="logo.png" alt="logo" height="60">
+                <h3>SkyMart</h3>
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="#">Shop Drones</a></li>
+                    <li><a href="#">Drone Accessories</a></li>
+                    <li><a href="#">Drone Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blogs/News</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main -->
+        <section id="content">
+            <aside class="box">
+                <h3>Left Side Content</h3>
+            </aside>
+            <main class="main">
+                <h1>This is main content</h1>
+            </main>
+            <aside class="box">
+                <h3>Right Content</h3>
+            </aside>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <span>All Rights Reserved &#169; &nbsp; 2024&nbsp;<a
+                    href="https://github.com/Nishan-Pradhan06">Nishan
+                    Pradhan</a></span>
+        </footer>
+    </body>
+</html>
