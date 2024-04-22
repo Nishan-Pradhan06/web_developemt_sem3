@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form action>
+            <h1>My Feedback Form</h1>
+            <ul>
+                <li>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password">
+                </li>
+                <dl>
+                    <dt>
+                        <li> <label for="checkbox">Please check all the emotions
+                                that apply to you: </label><br></li>
+                    </dt>
+                    <dd>
+                        <li>
+                            <label for="angry">Angry</label>
+                            <input type="checkbox" name="emotions" id>
+
+                        </li>
+                        <li> <label for="sad">Sad</label>
+                            <input type="checkbox" name="emotions" id>
+                        </li>
+                        <li> <label for="Happy">Happy</label>
+                            <input type="checkbox" name="emotions" id>
+                        </li>
+                        <li> <label for="Ambivalent">Ambivalent</label>
+                            <input type="checkbox" name="emotions" id>
+                        </li>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <li> <label for="checkbox">How satisfied were you with
+                                our service? </label><br></li>
+                    </dt>
+                    <dd>
+                        <li>
+                            <label for="services">Very Satisfied</label>
+                            <input type="radio" name="services" id="services">
+
+                        </li>
+                        <li>
+                            <label for="services">Satisfied</label>
+                            <input type="radio" name="services" id="services">
+                        </li>
+                        <li>
+                            <label for="services">Didn't care</label>
+                            <input type="radio" name="services" id="services">
+                        </li>
+                        <li>
+                            <label for="services">Disatisfied</label>
+                            <input type="radio" name="services" id="services">
+                        </li>
+                        <li>
+                            <label for="services">very disatisfied</label>
+                            <input type="radio" name="services" id="services">
+                        </li>
+                    </dd>
+                </dl>
+                <li>
+                    <label for="textarea">Further Comments: </label>
+                    <textarea name="comments" id="comments" cols="40"
+                        rows="5"></textarea>
+                </li>
+                <li>
+                    <label for="file">Bio Photo</label>
+                    <input type="file" name="file" id="file">
+                </li>
+                <li>
+                    <label for="Location"> Location Visited: </label>
+                    <select name="locations" id="locations">
+                        <option value="itahari">itahari</option>
+                        <option value="Dharan">Dharan</option>
+                        <option value="Belbari">Belbari</option>
+                        <option value="Jhapa">Jhapa</option>
+                    </select>
+                </li>
+                <li><input type="button" value="Submit"></li>
+            </ul>
+        </form>
+
+    </body>
+
+</html>
