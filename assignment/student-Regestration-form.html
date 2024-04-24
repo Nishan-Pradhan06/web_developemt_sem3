@@ -68,238 +68,236 @@
         <section id="form">
             <form action="#">
                 <section class="forms">
-                    <div class="right">
-                        <div class="container" id="first-name">
-                            <div class="label">
-                                <label for="name">FIRST NAME</label>
-                            </div>
-                            <div class="input-container">
-                                <input class="input" type="text"
-                                    name="firstname" id="firstname">
-                                <label>(max 30 characters a-z and A-z)</label>
-                            </div>
-
+                    <div class="container" id="first-name">
+                        <div class="label">
+                            <label for="name">FIRST NAME</label>
                         </div>
-                        <div class="container" id="last-name">
-                            <div class="label">
-                                <label for="name">LAST NAME</label>
-                            </div>
-                            <div class="input-container">
-                                <input class="input" type="text" name="lastname"
-                                    id="lastname">
-                                <label>(max 30 characters a-z and A-z)</label>
-                            </div>
-
+                        <div class="input-container">
+                            <input class="input" type="text"
+                                name="firstname" id="firstname">
+                            <label>(max 30 characters a-z and A-z)</label>
                         </div>
-                        <div class="container">
-                            <div class="label">
-                                <label for="dateOfBirth">DATE OF BIRTH</label>
-
-                            </div>
-                            <div class="date">
-                                <input type="date" id="dateOfBirthDay"
-                                    name="dateOfBirthDay" style="width: 60px;"
-                                    required>
-                                <input type="month" id="dateOfBirthMonth"
-                                    name="dateOfBirthMonth" style="width: 60px;"
-                                    required>
-                                <input type="date" id="dateOfBirthYear"
-                                    name="dateOfBirthYear" style="width: 60px;"
-                                    required>
-                            </div>
+                    </div>
+                    <div class="container" id="last-name">
+                        <div class="label">
+                            <label for="name">LAST NAME</label>
                         </div>
-                        <div class="container" id="email">
-                            <div class="label">
-                                <label for="email">EMAIL ID</label>
-                            </div>
-                            <div class="emai-field">
-
-                                <input class="input" type="email" name="email"
-                                    id="email">
-                            </div>
-                        </div>
-                        <div class="container dob-num" id="phonenum">
-                            <div class="label">
-                                <label for="phone">MOBILE NUMBER</label>
-                            </div>
-                            <input class="input" type="tel" name="phone"
-                                id="phone">
-                            <label>(10 digit number)</label>
-                        </div>
-                        <div class="container" id="phonenum">
-                            <div class="label">
-                                <label for="gender">GENDER</label>
-                            </div>
-                            <div class="gen">
-                                <label for="male">Male</label>
-                                <input type="radio" name="gender" id="gender">
-                                <label for="female">Female</label>
-                                <input type="radio" name="gender" id="gender">
-                            </div>
-
-                        </div>
-                        <div class="container" id="address">
-                            <div class="label">
-                                <label for="address">ADDRESS</label>
-                            </div>
-                            <div class="emai-field">
-                                <textarea name="address" id="address" cols="40"
-                                    rows="4"></textarea>
-                            </div>
-
-                        </div>
-                        <div class="container" id="city">
-                            <div class="label">
-                                <label for="city">CITY</label>
-                            </div>
-                            <div class="city-state">
-
-                                <input
-                                    class="input" type="text" name="city"
-                                    id="city">
-                                <label>(max 30 characters a-z and A-z)</label>
-                            </div>
-                        </div>
-                        <div class="container" id="pincode">
-                            <div class="label">
-
-                                <label for="code">PIN CODE</label>
-                            </div>
-                            <div class="input-field">
-                                <input class="input" type="number"
-                                    name="pincode"
-                                    id="code">
-                                <label>(6 digits number)</label>
-                            </div>
-
-                        </div>
-                        <div class="container" id="state">
-                            <div class="label">
-
-                                <label for="state">STATE</label>
-                            </div>
-                            <div class="city-state">
-
-                                <input class="input" type="text" name="text"
-                                    id="text">
-                                <label>(max 30 characters a-z and A-z)</label>
-                            </div>
-                        </div>
-                        <div class="container" id="country">
-                            <div class="label">
-
-                                <label for="state">COUNTRY</label>
-                            </div>
-                            <div class="input-field">
-                                <select class="input" name="country"
-                                    id="country">
-                                    <option value="india">India</option>
-                                    <option value="nepal">Nepal</option>
-                                    <option value="china">China</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="container" id="hobbies">
-                            <div class="label">
-
-                                <label for="hobbies"> HOBBIES</label>
-                            </div>
-                            <div class="hobbies">
-                                <div>
-
-                                    <label for="drawing">drawing</label>
-                                    <input type="checkbox" name id>
-                                    <label for="Singing">Singing</label>
-                                    <input type="checkbox" name id>
-                                    <label for="Dancing">Dancing</label>
-                                    <input type="checkbox" name id>
-                                </div>
-                                <div>
-                                    <label for="Sketching">Sketching</label>
-                                    <input type="checkbox" name id>
-                                    <label for="Other">Other</label>
-                                    <input type="checkbox" name id>
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="label">
-                                <label for="qualification">QUALIFICATION</label>
-
-                            </div>
-                            <table>
-                                <tr>
-                                    <th>SN. No.</th>
-                                    <th>Examination</th>
-                                    <th>Board</th>
-                                    <th>Percentage</th>
-                                    <th>Year of passing</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Class X</td>
-                                    <td><input type="text" name id></td>
-                                    <td><input type="text" name id></td>
-                                    <td><input type="text" name id></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Class XII</td>
-                                    <td><input type="text" name id></td>
-                                    <td><input type="text" name id></td>
-                                    <td><input type="text" name id></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Graduation</td>
-                                    <td><input type="text" name id></td>
-                                    <td><input type="text" name id></td>
-                                    <td><input type="text" name id></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Masters</td>
-                                    <td><input type="text" name id></td>
-                                    <td><input type="text" name id></td>
-                                    <td><input type="text" name id></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>(10 char max)</td>
-                                    <td>(upto 2 decimal)</td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="container" id="course">
-                            <div class="label">
-                                <label for="course">COURSE</label>
-                            </div>
-                            <div class="input-container-course">
-                                <label for="bca">BCA</label>
-                                <input type="radio" name="course" id="bca">
-                                <label for="B.Com">B.Com</label>
-                                <input type="radio" name="course" id="bca">
-                                <label for="B.A">B.A</label>
-                                <input type="radio" name="course" id="bca">
-                            </div>
+                        <div class="input-container">
+                            <input class="input" type="text" name="lastname"
+                                id="lastname">
+                            <label>(max 30 characters a-z and A-z)</label>
                         </div>
 
-                        <div class="container" id="button">
-                            <div class="button submit">
-                                <input type="button" value="Submit">
-                            </div>
-                            <div class="button reset">
-                                <input type="reset" value="Reset">
-                            </div>
+                    </div>
+                    <div class="container">
+                        <div class="label">
+                            <label for="dateOfBirth">DATE OF BIRTH</label>
 
                         </div>
-                    </section>
-                </form>
-            </section>
+                        <div class="date">
+                            <input type="date" id="dateOfBirthDay"
+                                name="dateOfBirthDay" style="width: 60px;"
+                                required>
+                            <input type="month" id="dateOfBirthMonth"
+                                name="dateOfBirthMonth" style="width: 60px;"
+                                required>
+                            <input type="date" id="dateOfBirthYear"
+                                name="dateOfBirthYear" style="width: 60px;"
+                                required>
+                        </div>
+                    </div>
+                    <div class="container" id="email">
+                        <div class="label">
+                            <label for="email">EMAIL ID</label>
+                        </div>
+                        <div class="emai-field">
 
-        </body>
+                            <input class="input" type="email" name="email"
+                                id="email">
+                        </div>
+                    </div>
+                    <div class="container dob-num" id="phonenum">
+                        <div class="label">
+                            <label for="phone">MOBILE NUMBER</label>
+                        </div>
+                        <input class="input" type="tel" name="phone"
+                            id="phone">
+                        <label>(10 digit number)</label>
+                    </div>
+                    <div class="container" id="phonenum">
+                        <div class="label">
+                            <label for="gender">GENDER</label>
+                        </div>
+                        <div class="gen">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="gender">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="gender">
+                        </div>
 
-    </html>
+                    </div>
+                    <div class="container" id="address">
+                        <div class="label">
+                            <label for="address">ADDRESS</label>
+                        </div>
+                        <div class="emai-field">
+                            <textarea name="address" id="address" cols="40"
+                                rows="4"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="container" id="city">
+                        <div class="label">
+                            <label for="city">CITY</label>
+                        </div>
+                        <div class="city-state">
+
+                            <input
+                                class="input" type="text" name="city"
+                                id="city">
+                            <label>(max 30 characters a-z and A-z)</label>
+                        </div>
+                    </div>
+                    <div class="container" id="pincode">
+                        <div class="label">
+
+                            <label for="code">PIN CODE</label>
+                        </div>
+                        <div class="input-field">
+                            <input class="input" type="number"
+                                name="pincode"
+                                id="code">
+                            <label>(6 digits number)</label>
+                        </div>
+
+                    </div>
+                    <div class="container" id="state">
+                        <div class="label">
+
+                            <label for="state">STATE</label>
+                        </div>
+                        <div class="city-state">
+
+                            <input class="input" type="text" name="text"
+                                id="text">
+                            <label>(max 30 characters a-z and A-z)</label>
+                        </div>
+                    </div>
+                    <div class="container" id="country">
+                        <div class="label">
+
+                            <label for="state">COUNTRY</label>
+                        </div>
+                        <div class="input-field">
+                            <select class="input" name="country"
+                                id="country">
+                                <option value="india">India</option>
+                                <option value="nepal">Nepal</option>
+                                <option value="china">China</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container" id="hobbies">
+                        <div class="label">
+
+                            <label for="hobbies"> HOBBIES</label>
+                        </div>
+                        <div class="hobbies">
+                            <div>
+
+                                <label for="drawing">drawing</label>
+                                <input type="checkbox" name id>
+                                <label for="Singing">Singing</label>
+                                <input type="checkbox" name id>
+                                <label for="Dancing">Dancing</label>
+                                <input type="checkbox" name id>
+                            </div>
+                            <div>
+                                <label for="Sketching">Sketching</label>
+                                <input type="checkbox" name id>
+                                <label for="Other">Other</label>
+                                <input type="checkbox" name id>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="label">
+                            <label for="qualification">QUALIFICATION</label>
+
+                        </div>
+                        <table>
+                            <tr>
+                                <th>SN. No.</th>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of passing</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Class X</td>
+                                <td><input type="text" name id></td>
+                                <td><input type="text" name id></td>
+                                <td><input type="text" name id></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Class XII</td>
+                                <td><input type="text" name id></td>
+                                <td><input type="text" name id></td>
+                                <td><input type="text" name id></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Graduation</td>
+                                <td><input type="text" name id></td>
+                                <td><input type="text" name id></td>
+                                <td><input type="text" name id></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Masters</td>
+                                <td><input type="text" name id></td>
+                                <td><input type="text" name id></td>
+                                <td><input type="text" name id></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>(10 char max)</td>
+                                <td>(upto 2 decimal)</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="container" id="course">
+                        <div class="label">
+                            <label for="course">COURSE</label>
+                        </div>
+                        <div class="input-container-course">
+                            <label for="bca">BCA</label>
+                            <input type="radio" name="course" id="bca">
+                            <label for="B.Com">B.Com</label>
+                            <input type="radio" name="course" id="bca">
+                            <label for="B.A">B.A</label>
+                            <input type="radio" name="course" id="bca">
+                        </div>
+                    </div>
+
+                    <div class="container" id="button">
+                        <div class="button submit">
+                            <input type="button" value="Submit">
+                        </div>
+                        <div class="button reset">
+                            <input type="reset" value="Reset">
+                        </div>
+
+                    </div>
+                </section>
+            </form>
+        </section>
+
+    </body>
+
+</html>
