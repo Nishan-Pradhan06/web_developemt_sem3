@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("fhEwl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: cadetblue;
+    height: 50px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    padding: 10px;
+    list-style: none;
+    font-size: 30px;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+}

@@ -17,6 +17,7 @@ body {
 nav {
     background-color: #282a35;
     max-height: 200px;
+    position: fixed;
 }
 
 /*  */
@@ -94,9 +95,11 @@ a {
     font-weight: 700;
     margin-top: 30px !important;
 }
-.learnToCodeh4 a{
+
+.learnToCodeh4 a {
     text-decoration: underline;
 }
+
 form.example {
     position: relative;
     margin-top: 30px !important;
@@ -142,4 +145,64 @@ form.example::after {
     content: "";
     clear: both;
     display: table;
+}
+
+svg {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #D9EEE1;
+}
+
+#wavepath {
+    fill: #282A35;
+}
+
+#sec-html {
+
+    background-color: #d9eee1;
+}
+
+.body-course-det {
+    padding: 0 16em;
+}
+
+.learnh1 {
+    margin-top: 20px;
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* #body{
+    height: 300px;
+} */
+#sec-css {
+    background-color: #fff4a3;
+}
+
+.sec-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.languageHTMLh4 {
+    color: #000000;
+}
+
+.buttons {
+    padding: 20px;
+}
+
+.tut-button {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    height: 40px;
 }

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(); */
+    background: rgb(27, 32, 36);
+    background: radial-gradient(circle, rgba(27, 32, 36, 1) 0%, rgba(41, 46, 52, 1) 50%, rgba(27, 32, 36, 1) 100%);
+}
+.items,a{
+    list-style: none;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+.items-list{
+    display: flex;
+    align-items: center;
+    /* width: 30%, */
+
+}
+li{
+    /* padding: 0 10px; */
+}
