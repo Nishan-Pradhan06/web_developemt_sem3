@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>W3Schools Online Web Tutorials</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../icons/W3Schools_logo.svg.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xxxxxx" crossorigin="anonymous" />
 
     </head>
     <body>
@@ -16,7 +18,7 @@
                 <li><a href="#">SQL</a></li>
                 <li><a href="#">PYTHON</a></li>
                 <li><a href="#">JAVA</a></li>
-                <li><a href="#">PHP</a></li>
+                <li><a href="#">PHP</a></li>    
                 <li><a href="#">C</a></li>
                 <li><a href="#">c++</a></li>
                 <li><a href="#">C#</a></li>
@@ -47,10 +49,24 @@
         </nav>
         <section id="hero-section">
             <div class="hero-text">
-                <h1>Learn to Code</h1>
-                <h3>With the world's largest web developer site</h3>
-                <input type="search" name="search" id="search">
-                <h4>Not Sure Where to Begin?</h4>
+                <h1 class="learnToCodeh1">Learn to Code</h1>
+                <h3 class="learnToCodeh3">With the world's largest web developer
+                    site</h3>
+                <form class="example" action="/action_page.php"
+                    style="margin:auto;max-width:500px">
+                    <input type="text"
+                        placeholder="Search our tutorials, e.g. HTML"
+                        id="search2" class="ga-fp" autocomplete="off"
+
+                        style="border-bottom-left-radius: 25px;">
+                    <button type="button" id="learntocode_searchbtn"
+                        onclick="click_learntocode_search_btn()"><i
+                            id="learntocode_searchicon"
+                            class="fa fa-search ga-fp"></i></button>
+                    <div id="listofsearchresults" style="display: none;"></div>
+                </form>
+                <h4 class="learnToCodeh4"><a href="#">Not Sure Where to
+                        Begin?</a></h4>
             </div>
         </section>
 
