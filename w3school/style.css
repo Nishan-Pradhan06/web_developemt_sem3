@@ -77,7 +77,7 @@ a {
 }
 
 .learnToCodeh1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
 }
 
@@ -85,7 +85,7 @@ a {
     color: #FFF4A3;
     font-weight: 700;
     margin-top: 20px !important;
-    font-size: 23px;
+    font-size: 22px;
 }
 
 .learnToCodeh4 {
@@ -142,48 +142,4 @@ form.example::after {
     content: "";
     clear: both;
     display: table;
-}
-
-#listofsearchresults {
-    display: none;
-    position: absolute;
-    border:1px solid #000;
-    background-color: #282A35;
-    background-color: #fff;
-    color: #000;
-    width: 80%;
-    top: 47px;
-    border-left: 1px solid #282A35;
-    border-right: 1px solid #282A35;
-    border-bottom: 1px solid #282A35;
-    text-align: left;
-}
-
-#listofsearchresults a {
-    background-color: #e2e3e9;
-    background-color: #fff;
-    color: #777;
-    text-decoration: none;
-    display: block;
-    padding: 10px 30px;
-    width: 100%;
-    opacity: 0.95;
-}
-
-#listofsearchresults a:hover {
-    color: #000;
-    opacity: 1;
-}
-
-.span_search {
-    background-color: #ffecee;
-}
-
-.search_active {
-    background-color: #ffecee !important;
-    color: #000 !important;
-}
-
-.search_active .span_search {
-    background-color: #ffccd1;
 }
