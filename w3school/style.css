@@ -18,6 +18,7 @@ nav {
     background-color: #282a35;
     max-height: 200px;
 }
+
 /*  */
 .scrollable-nav {
     overflow-y: hidden;
@@ -59,4 +60,18 @@ a {
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
+}
+
+#hero-section {
+    background-image: url(./icons/lynx_in_space.png), url(./icons/background_in_space.gif);
+    background-repeat: no-repeat, repeat;
+    background-position: 90% 60%, center center;
+    /*left top*/
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.hero-text
+{
+    text-align: center;
+    color: #ffffff;
 }
