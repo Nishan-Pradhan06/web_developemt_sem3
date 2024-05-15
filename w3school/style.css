@@ -11,18 +11,19 @@
 /* Global Styles */
 body {
     font-family: "Poppins", sans-serif;
+    overflow-y: scroll;
 }
 
 /* Navigation Styles */
 nav {
     background-color: #282a35;
-    max-height: 200px;
-    position: fixed;
+    z-index: 999;
 }
 
 /*  */
 .scrollable-nav {
     overflow-y: hidden;
+    max-height: 200px;
 }
 
 .scrollable-nav::-webkit-scrollbar {
@@ -68,6 +69,7 @@ a {
     background-repeat: no-repeat, repeat;
     background-position: 90% 60%, center center;
     /*left top*/
+    position: relative;
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -148,7 +150,7 @@ form.example::after {
 }
 
 svg {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     background-color: #D9EEE1;
