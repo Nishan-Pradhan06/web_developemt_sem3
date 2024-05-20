@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.relatives {
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    border: 3px solid orange;
+}
+.absolute {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+
+    transform: translate(50%,-50%)
+}
