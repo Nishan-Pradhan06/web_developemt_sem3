@@ -36,6 +36,7 @@ body {
     border: none;
     border-radius: 6px;
     color: #fff;
+    cursor: pointer;
 }
 
 #menus a {
@@ -73,10 +74,17 @@ body {
 #left h1 {
     font-size: 80px;
 }
-#left button{
+
+#left button {
     background-color: purple;
     border-radius: 300px;
     padding: 15px 25px;
     border: none;
     color: white;
+    cursor: pointer;
+}
+
+#left button:hover,
+#button button:hover {
+    background-color: #590959;
 }
