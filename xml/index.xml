@@ -1,0 +1,34 @@
+<bcathidsemester>
+    <students>
+        <SN>1</SN>
+        <name>Nishan Pradhan</name>
+        <phoneNumber>9817326306</phoneNumber>
+        <stdAddress>Laxmimarga</stdAddress>
+        <stdEmail>nishanpradhan500@gmail.com</stdEmail>
+        <bloodGroup>O+</bloodGroup>
+    </students>
+    <students>
+        <SN>2</SN>
+        <name>Sahabir Jung Basnet</name>
+        <phoneNumber>982343242</phoneNumber>
+        <stdAddress>Dulari</stdAddress>
+        <stdEmail>sahabirjung@gmail.com</stdEmail>
+        <bloodGroup>A+</bloodGroup>
+    </students>
+    <students>
+        <SN>3</SN>
+        <name>Shanti Rai</name>
+        <phoneNumber>983242334</phoneNumber>
+        <stdAddress>Itahari</stdAddress>
+        <stdEmail>shantirai@gmail.com</stdEmail>
+        <bloodGroup>B-</bloodGroup>
+    </students>
+    <students>
+        <SN>4</SN>
+        <name>Pomela Rai</name>
+        <phoneNumber>98453454</phoneNumber>
+        <stdAddress>Itahari</stdAddress>
+        <stdEmail>pomelarai@gmail.com</stdEmail>
+        <bloodGroup>O-</bloodGroup>
+    </students>
+</bcathidsemester>
