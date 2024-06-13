@@ -1,0 +1,89 @@
+<!-- Write a HTML program to develop a static Student Registration Form
+Use different form elements( input, label, select, textarea, button, fieldset, legend, option ) and
+different input types ( button, checkbox, date, email, file, image, month, number, password, radio,
+submit ) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form action="process_registration.php" method="post" enctype="multipart/form-data">
+
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" id="first_name" required>
+    <br><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" id="last_name" required>
+    <br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+
+    <label for="date_of_birth">Date of Birth:</label>
+    <input type="date" name="date_of_birth" id="date_of_birth" required>
+    <br><br>
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+    <label for="phone_number">Phone Number:</label>
+    <input type="tel" name="phone_number" id="phone_number">  <br><br>
+
+    <label for="address">Address:</label>
+    <textarea name="address" id="address" rows="4" cols="50" required></textarea>
+    <br><br>
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Course Selection</legend>
+    <label for="course">Select Course:</label>
+    <select name="course" id="course">
+      <option value="">Select Course</option>
+      <option value="BSc Computer Science">BSc Computer Science</option>
+      <option value="BSc Mathematics">BSc Mathematics</option>
+      <option value="BSc Physics">BSc Physics</option>
+    </select>
+    <br><br>
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Additional Information</legend>
+    <label for="profile_picture">Upload Profile Picture (optional):</label>
+    <input type="file" name="profile_picture" id="profile_picture" accept="image/*">
+    <br><br>
+
+    <label for="hobbies">Hobbies (choose all that apply):</label>
+    <br>
+    <input type="checkbox" name="hobbies[]" value="Reading"> Reading
+    <input type="checkbox" name="hobbies[]" value="Sports"> Sports
+    <input type="checkbox" name="hobbies[]" value="Music"> Music
+    <br><br>
+
+    <label for="previous_school">Previous School Name:</label>
+    <input type="text" name="previous_school" id="previous_school">
+    <br><br>
+  </fieldset>
+
+  <br>
+
+  <button type="submit">Register</button>
+
+</form>
+
+</body>
+</html>
