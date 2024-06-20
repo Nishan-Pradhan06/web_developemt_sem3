@@ -1,0 +1,8 @@
+<!ELEMENT students (student+)>
+<!ELEMENT student (name,address+,phone,websites)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address type (permanent | temporary) #REQUIRED>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone length CDATA #FIXED "10">
+<!ELEMENT websites (#PCDATA)>

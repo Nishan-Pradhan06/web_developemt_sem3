@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students[
+<!ELEMENT students (student+)>
+<!ELEMENT student (name,address+,phone,websites)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address type (permanent | temporary) #REQUIRED>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone length CDATA #FIXED "10">
+<!ELEMENT websites (#PCDATA)>]>
+
+<students>
+    <student>
+        <name>Nishan Pradhan</name>
+        <address type="permanent">Laxmimarga</address>
+        <address type ="temporary">Laxmimarga</address>
+        <phone>9817326306</phone>
+        <websites>https://nishanpradhan.com.np</websites>
+    </student>
+    <student>
+        <name>Isha Thapa</name>
+        <address type="permanent">Bhaunee</address>
+        <address type ="temporary">Bhaunee</address>
+        <phone>984634543</phone>
+        <websites>https://ishathapa.com.np</websites>
+    </student>
+</students>
