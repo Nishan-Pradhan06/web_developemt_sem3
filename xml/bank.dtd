@@ -1,0 +1,2 @@
+<!ELEMENT bank (customer | account | employee)+>
+<!ELEMENT customer (customerId, name, address)>

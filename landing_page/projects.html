@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scrollable Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .scroll-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        .scroll-button.left {
+            left: 10px;
+        }
+        .scroll-button.right {
+            right: 10px;
+        }
+        .card-container-wrapper {
+            position: relative;
+            width: 90%;
+        }
+        .card-container {
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            scroll-behavior: smooth;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .card-container::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+        }
+        .card-container {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .card {
+            flex: 0 0 auto;
+            width: 300px; /* Increase card width */
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-title {
+            padding: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+        }
+        .button-container .github {
+            background-color: #333;
+        }
+        .button-container .live {
+            background-color: #28a745;
+        }
+        .button-container a i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<button class="scroll-button left" onclick="scrollLeft()"><i class="fas fa-chevron-left"></i></button>
+<div class="card-container-wrapper">
+    <div class="card-container" id="cardContainer">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Image 1">
+            <div class="card-title">Card Title 1</div>
+            <div class="button-container">
+                <a href="#" class="github">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="#" class="live">
+                    <i class="fas fa-play"></i>
+                    Live
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+            <div class="card-title">Card Title 2</div>
+            <div class="button-container">
+                <a href="#" class="github">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="#" class="live">
+                    <i class="fas fa-play"></i>
+                    Live
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Image 3">
+            <div class="card-title">Card Title 3</div>
+            <div class="button-container">
+                <a href="#" class="github">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="#" class="live">
+                    <i class="fas fa-play"></i>
+                    Live
+                </a>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+</div>
+<button class="scroll-button right" onclick="scrollRight()"><i class="fas fa-chevron-right"></i></button>
+
+<script>
+    function scrollLeft() {
+        document.getElementById('cardContainer').scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        document.getElementById('cardContainer').scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>

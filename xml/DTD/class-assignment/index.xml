@@ -6,7 +6,7 @@
 <!ELEMENT banner (#PCDATA)>
 <!ELEMENT day (date,(holiday,programslot)+)>
 <!ELEMENT date (#PCDATA)>
-<!ELEMENT holiday (#PCDATA)>
+<!ELEMENT holiday (#PCDATA)> 
 <!ELEMENT programslot (time, title, description?)>
 <!ELEMENT time (#PCDATA)>
 <!ELEMENT title (#PCDATA)>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TVSCHEDULE [
+    <!ELEMENT library (book+,employee+,member+)>
+    
+    <!ELEMENT book (title,author+,publishDate,category,price)>
+    <!ATTLIST book title CDATA #REQUIRED>
+    <!ATTLIST book author CDATA #IMPLIED>
+    <!ATTLIST book publishDate CDATA #IMPLIED>
+    <!ATTLIST book category CDATA #REQUIRED>
+    <!ATTLIST book price CDATA #REQUIRED>
+
+    <!ELEMENT employee (name, address, phoneNumber)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+    <!ELEMENT phoneNumber (#PCDATA)>
+
+    <!ELEMENT member (MemberName, memberId, MemberAdd, contact)>
+    <!ELEMENT MemberName (#PCDATA)>
+    <!ELEMENT memberId (#PCDATA)>
+    <!ELEMENT contact (#PCDATA)>
+    <!ELEMENT MemberAdd (#PCDATA)>
+
+]>
