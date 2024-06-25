@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TU xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.nishanpradhan.com.np schema.">
+    <employee>
+        <post>CTO123</post>
+        <salary>40000</salary>
+        <gender>male</gender>
+        <username>NishanPradhan</username>
+        <password>nishanAB</password>
+    </employee>
+</TU>
